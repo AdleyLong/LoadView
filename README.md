@@ -1,13 +1,13 @@
 # LoadView
 
-> ÎÒÃÇÔÚ½øĞĞÍøÂç¼ÓÔØµÄÊ±ºò£¬ÓĞÊ±ºòĞèÒªÒ»¸öÄÜ¸²¸Ç½çÃæµÄloading½çÃæ£¬±ÈÈçµÚÒ»´Î½øÓ¦ÓÃ£¬¼ÓÔØÊı¾İµÄÊ±ºò£¬ĞèÒªÕâÃ´¸öloadingÒ³Ãæ£¬ÌåÑé±È½ÏÓÑºÃ£¬ÔÙ±ÈÈçµÚÒ»´Î½øÀ´£¬Êı¾İ¼ÓÔØÊ§°ÜÁË£¬»òÕßÎŞÍøÂçÁË£¬ĞèÒªÓĞ¸öÓÑºÃµÄÌáÊ¾£¬¿Õ¿Õµ´µ´µÄĞ§¹û²»ºÃ£¬ÓĞÊ±ºòµã»÷ÎŞÍøÂçÍ¼Æ¬¿ÉÒÔÖØĞÂË¢ĞÂ£¬ËùÒÔĞ´ÁË¸öÍ¨ÓÃµÄLoadingView¡£
+> æˆ‘ä»¬åœ¨è¿›è¡Œç½‘ç»œåŠ è½½çš„æ—¶å€™ï¼Œæœ‰æ—¶å€™éœ€è¦ä¸€ä¸ªèƒ½è¦†ç›–ç•Œé¢çš„loadingç•Œé¢ï¼Œæ¯”å¦‚ç¬¬ä¸€æ¬¡è¿›åº”ç”¨ï¼ŒåŠ è½½æ•°æ®çš„æ—¶å€™ï¼Œéœ€è¦è¿™ä¹ˆä¸ªloadingé¡µé¢ï¼Œä½“éªŒæ¯”è¾ƒå‹å¥½ï¼Œå†æ¯”å¦‚ç¬¬ä¸€æ¬¡è¿›æ¥ï¼Œæ•°æ®åŠ è½½å¤±è´¥äº†ï¼Œæˆ–è€…æ— ç½‘ç»œäº†ï¼Œéœ€è¦æœ‰ä¸ªå‹å¥½çš„æç¤ºï¼Œç©ºç©ºè¡è¡çš„æ•ˆæœä¸å¥½ï¼Œæœ‰æ—¶å€™ç‚¹å‡»æ— ç½‘ç»œå›¾ç‰‡å¯ä»¥é‡æ–°åˆ·æ–°ï¼Œæ‰€ä»¥å†™äº†ä¸ªé€šç”¨çš„LoadingViewã€‚
 
 ---
-¿´Ğ§¹û
+çœ‹æ•ˆæœ
 
-![ÕâÀïĞ´Í¼Æ¬ÃèÊö](http://img.blog.csdn.net/20160720172721707)
-##Ê¹ÓÃ·½·¨
-**1¡¢ ÔÚ²¼¾ÖÀïÃæÊ¹ÓÃÎÒÃÇµÄ×Ô¶¨ÒåLoadingView**
+![è¿™é‡Œå†™å›¾ç‰‡æè¿°](https://github.com/AdleyLong/LoadView/blob/master/demo.gif)
+##ä½¿ç”¨æ–¹æ³•
+**1ã€ åœ¨å¸ƒå±€é‡Œé¢ä½¿ç”¨æˆ‘ä»¬çš„è‡ªå®šä¹‰LoadingView**
 
 ```
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -31,33 +31,33 @@
 </RelativeLayout>
 ```
 
-**2¡¢¸ù¾İ²»Í¬Çé¿öµ÷ÓÃ**
+**2ã€æ ¹æ®ä¸åŒæƒ…å†µè°ƒç”¨**
 
- 2.1 ÕıÔÚ¼ÓÔØ
+ 2.1 æ­£åœ¨åŠ è½½
  
 
 ```
 mLoadView.setStatue(LoadingView.LOADING);
 ```
- 2.2ÎŞÍøÂçÇé¿ö
+ 2.2æ— ç½‘ç»œæƒ…å†µ
  
 
 ```
 mLoadView.setStatue(LoadingView.NO_NETWORK);
 ```
-2.3ÎŞÊı¾İÇé¿ö
+2.3æ— æ•°æ®æƒ…å†µ
 
 ```
 mLoadView.setStatue(LoadingView.NO_DATA);
 ```
 
-2.4 ÎŞÍøÂç»òÕß¼ÓÔØÊ§°Üºó£¬Èç¹ûĞèÒªµã»÷½çÃæÖØĞÂË¢ĞÂ£¬
-ÔòÕâÀïĞèÒª»Øµ÷Ò»¸örefresh·½·¨
+2.4 æ— ç½‘ç»œæˆ–è€…åŠ è½½å¤±è´¥åï¼Œå¦‚æœéœ€è¦ç‚¹å‡»ç•Œé¢é‡æ–°åˆ·æ–°ï¼Œ
+åˆ™è¿™é‡Œéœ€è¦å›è°ƒä¸€ä¸ªrefreshæ–¹æ³•
 
 ```
 mLoadView.setRefrechListener(this);
 ```
-2.5 loadingviewÏûÊ§
+2.5 loadingviewæ¶ˆå¤±
 
 ```
 mLoadView.setStatue(LoadingView.GONE);
@@ -65,7 +65,7 @@ mLoadView.setStatue(LoadingView.GONE);
 
 ---
 
-ÏÂÃæĞ´ÁË¸ödemo£¬Ä£ÄâĞ§¹ûÓÃ¡£
+ä¸‹é¢å†™äº†ä¸ªdemoï¼Œæ¨¡æ‹Ÿæ•ˆæœç”¨ã€‚
 
 ```
 public class MainActivity extends AppCompatActivity implements LoadingView.OnRefreshListener {
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity implements LoadingView.OnRef
         mLoadView.setStatue(LoadingView.LOADING);
         mLoadView.setRefrechListener(this);
 
-        //Ë¢ĞÂ3sºóÄ£ÄâÎŞÍøÂç
+        //åˆ·æ–°3såæ¨¡æ‹Ÿæ— ç½‘ç»œ
         new Handler().postDelayed(new Runnable() {
 
             @Override
@@ -95,13 +95,13 @@ public class MainActivity extends AppCompatActivity implements LoadingView.OnRef
         }, 5 * 1000);
     }
 
-    //Ë¢ĞÂ½çÃæ·½·¨
+    //åˆ·æ–°ç•Œé¢æ–¹æ³•
     @Override
     public void refresh() {
         // TODO Auto-generated method stub
         Toast.makeText(this, "refresh", Toast.LENGTH_SHORT).show();
 
-        //Ë¢ĞÂ3sºóÄ£ÄâË¢ĞÂ³É¹¦
+        //åˆ·æ–°3såæ¨¡æ‹Ÿåˆ·æ–°æˆåŠŸ
         new Handler().postDelayed(new Runnable() {
 
             @Override
