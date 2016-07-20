@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LoadView</string>
+    <string name="click_to_refresh"><Data><![CDATA[网络连接失败，点击<font color="#2AC2EF">重试</font>]]></Data></string>
+    <string name="catg_refreshing">后台小妹儿正在加载&#8230;</string>
+
+</resources>
